@@ -47,30 +47,3 @@ chorus(void)
     printf("Knick-knack paddywhack, give your dog a bone\n");
     printf("This old man came rolling home\n");
 }
-
-
-/*********** 
-*First array: numbers
-one
-two
-three
-four
-five
-six
-seven
-eight
-nine
-ten
-
-*Second array: second lines
-on my thumb
-on my shoe
-on my knee
-on my door
-on my hive
-on my sticks
-up in heaven
-on my gate
-on my spine
-once again
-*************/
