@@ -26,6 +26,8 @@ main(void)
     
     // first row will print 2 hashes, assuming the pyramid has a height of at least 1
     hashes = 2;
+
+    // this loop will iterate some number of times equal to the height of the pyramid
     for (n = 0; n < height; n++)
     {
         for (i = 0; i < spaces; i++)

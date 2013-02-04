@@ -30,7 +30,7 @@ int main(int argc, string argv[])
     for (i = 0, n = strlen(p); i < n; i++)
     {
         // store ASCII value of each char in an array
-        int ascii[strlen(p)]; 
+        int ascii[n]; 
         ascii[i] = (int) p[i];
         
         // test for capital letters
