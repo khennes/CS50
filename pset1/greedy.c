@@ -1,3 +1,5 @@
+/* Returns the minimum number of coins needed to make a given amount of change */
+
 #include <cs50.h>
 #include <stdio.h>
 #include <math.h>

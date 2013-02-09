@@ -1,3 +1,5 @@
+/* Prints the song "This Old Man" using arrays and loops */
+
 #include <cs50.h>
 #include <stdio.h>
 

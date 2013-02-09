@@ -1,14 +1,15 @@
+/* Vigenere cipher: Encrypts a user's plaintext input using a command-line argument as a keyword */
+
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
 
-
 int main(int argc, string argv[])
 {    
     string k, p;
-    int i, j, x, n, var;
+    int i, j, x, m, n, var;
     
     // return an error if command line takes other than one argument
     if (argc != 2)
@@ -46,7 +47,7 @@ int main(int argc, string argv[])
     n = strlen(p);
     int plain[n];
     
-    for (i = 0; i < n; i++)
+    for (i = 0, m = 0; i < n; i++)
     {
         // cast and store ASCII values of each char in string p in an array called plain
         plain[i] = (int) p[i];
@@ -58,18 +59,19 @@ int main(int argc, string argv[])
         // test for capital letters, set equivalent to 0-25
         else if (isupper(plain[i]) != 0)
         {
-            var = (plain[i] - 65 + key[i % x]) % 26 + 65;
-            j++;
+            var = (plain[i] - 65 + key[m % x]) % 26 + 65;
+            m++;
         }
         // do the same for lowercase
         else
         {
-            var = (plain[i] - 97 + key[i % x]) % 26 + 97; 
-            j++;
+            var = (plain[i] - 97 + key[m % x]) % 26 + 97; 
+            m++;
         }
         // print the enciphered text, recast as chars
         printf("%c", (char) var);
     }
+
     printf("\n");
     return 0;
 }

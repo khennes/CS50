@@ -1,3 +1,5 @@
+/* Encrypts a user's plaintext input using a command-line argument as the key */
+
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
